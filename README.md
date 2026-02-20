@@ -232,6 +232,8 @@ Nightshift is one of six OpenClaw plugins that work together to give an agent se
 
 Each plugin is independent and useful on its own. Together they form a complete cognitive architecture.
 
+See [openclaw-metacognitive-suite](https://github.com/CoderofTheWest/openclaw-metacognitive-suite) for the full picture.
+
 ## License
 
 MIT
