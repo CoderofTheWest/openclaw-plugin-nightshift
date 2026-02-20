@@ -1,0 +1,69 @@
+{
+  "enabled": true,
+  
+  "schedule": {
+    "defaultOfficeHours": {
+      "start": "22:30",
+      "end": "05:00",
+      "timezone": "America/Los_Angeles"
+    },
+    "goodNightBufferMinutes": 30,
+    "userActiveThresholdMinutes": 5
+  },
+  
+  "triggers": {
+    "goodNightPhrases": [
+      "good night",
+      "goodnight",
+      "gn ",
+      "heading to bed",
+      "going to bed",
+      "off to bed",
+      "turning in",
+      "signing off",
+      "calling it a night",
+      "heading to sleep",
+      "im going to sleep",
+      "i'm going to sleep"
+    ],
+    "morningPhrases": [
+      "good morning",
+      "gm ",
+      "morning",
+      "you up",
+      "you there",
+      "im back",
+      "i'm back"
+    ]
+  },
+  
+  "processing": {
+    "cycleIntervalMs": 60000,
+    "maxCyclesPerNight": 10,
+    "pauseOnUserActivity": true,
+    "resumeAfterMinutes": 5
+  },
+  
+  "tasks": {
+    "contemplation": {
+      "enabled": true,
+      "priority": 50,
+      "maxPerNight": 3
+    },
+    "crystallization": {
+      "enabled": true,
+      "priority": 25,
+      "maxPerNight": 2
+    },
+    "metabolismBatch": {
+      "enabled": true,
+      "priority": 10,
+      "maxPerNight": 5
+    }
+  },
+  
+  "state": {
+    "persistPath": "state.json",
+    "logPath": "nightshift.log"
+  }
+}
