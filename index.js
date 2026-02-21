@@ -56,7 +56,7 @@ function ensureDir(dirPath) {
 // ---------------------------------------------------------------------------
 
 module.exports = {
-    id: 'nightshift',
+    id: 'openclaw-plugin-nightshift',
     name: 'Night Shift Scheduler',
 
     configSchema: {
